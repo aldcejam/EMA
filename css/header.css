@@ -1,0 +1,48 @@
+@import "/css/colors.css";
+@import "/css/base.css";
+.header {
+    width: 100%;
+    height: 10vh;
+    min-height: 40px;
+    max-height: 65px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--font-color);
+    transition: 1s;
+}
+
+.header__log {
+    height: 70%;
+    max-height: 50px;
+}
+
+.header__image {
+    margin: 9% 40px;
+    min-height: 30px;
+    height: 100%;
+}
+.header__options {
+    margin: auto 35px;
+}
+
+.options__list {
+    display: flex;
+}
+
+.options__unity {
+    padding: 10px;
+    list-style: none;
+}
+.options__link {
+    padding:  3px 10px;
+}
+.options__unity:nth-child(4) a{
+    border: 1px solid var(--font-color);
+    border-radius: 30px;
+}
+@media(max-width: 460px) {
+    .header__log {
+        max-height: 6vh;
+        margin: 2px 3px;
+    }
+}

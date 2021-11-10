@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>EMA</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleContato.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__log">
+            <img class="header__image" src="/img-illustration/linux.png" alt="LOGO">
+        </div>
+        <div class="header__menu">
+            <div class="menu__burguer">
+                <div id="menu__line1" class="menu__line"></div>
+                <div id="menu__line2" class="menu__line"></div>
+            </div>
+        </div>
+        <nav class="header__options">
+            <ul class="options__list">
+                <li class="options__unity">
+                    <a href="/" class="options__link">HOME</a>
+                </li>
+                <li class="options__unity">
+                    <a href="#" class="options__link">SOBRE</a>
+                </li>
+                <li class="options__unity">
+                    <a style="text-decoration: underline;" href="/contato/indexContato.html"
+                        class="options__link">CONTATO</a>
+                </li>
+                <li class="options__unity">
+                    <a href="/login/login.html" class="options__link">LOGIN</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="container__form">
+            <form class="form__contact" action="" autocomplete="off" onsubmit="validar()">
+                <fieldset class="contact__fieldset">
+                    <input class="fieldset--input" type="text" name="userName" id="userName" placeholder="Nome...">
+                    <input class="fieldset--input" type="email" name="userName" id="userEmail" placeholder="Email...">
+                    <input class="fieldset--input" type="text" name="userName" id="userAssunto" placeholder="Assunto..."
+                        style="background-image: url(/img-icons/envelope-alt.svg);">
+                    <label for=""></label>
+                    <textarea name="message" id="fieldset--message" placeholder="Menssagem..."></textarea>
+                    <input type="submit" class="fieldset--input-enviar" value="Enviar" style="background-image: none;">
+                </fieldset>
+            </form>
+        </div>
+        <div class="container__illustration">
+            <img class="illustration--img" src="/img-illustration/illustration.svg" alt="">
+        </div>
+
+    </section>
+    <script type="text/javascript" src="contato.js"></script>
+    <script src="/js/darkMode.js"></script>
+</body>
+
+</html>

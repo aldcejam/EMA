@@ -1,0 +1,14 @@
+@import "/css/colors.css/";
+
+*,a{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+body {
+    background-color: var(--body-color);
+    height: 100vh;
+}

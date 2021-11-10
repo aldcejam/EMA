@@ -1,0 +1,8 @@
+html:root{
+    --body-color:  white;
+    --font-color: #9300b7;
+}
+.dark-mode:root{
+    --body-color:  rgb(13, 3, 24);
+    --font-color: #ffffff;
+}

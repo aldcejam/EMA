@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>EMA</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginStyle.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__log">
+            <img class="header__image" src="/img-illustration/linux.png" alt="LOGO">
+        </div>
+        <div class="header__menu">
+            <div class="menu__burguer">
+                <div id="menu__line1" class="menu__line"></div>
+                <div id="menu__line2" class="menu__line"></div>
+            </div>
+        </div>
+        <nav class="header__options">
+            <ul class="options__list">
+                <li class="options__unity">
+                    <a href="/home/indexHome.html" class="options__link">HOME</a>
+                </li>
+                <li class="options__unity">
+                    <a href="#" class="options__link">SOBRE</a>
+                </li>
+                <li class="options__unity">
+                    <a href="/contato/indexContato.html" class="options__link">CONTATO</a>
+                </li>
+                <li class="options__unity">
+                    <a style="text-decoration: underline;" href="/login/login.html" class="options__link">LOGIN</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="container__form">
+            <form class="form__login" action="" autocomplete="off" onsubmit="validate()">
+                <fieldset class="login__fieldset">
+                    <h3>Login</h3>
+                    <input class="fieldset--input" type="text" name="userRegistration" id="userRegistration"
+                        placeholder="Matricula...">
+                    <input class="fieldset--input" type="password" name="userPassword" id="userPassword"
+                        placeholder="Senha...">
+                    <div class="fieldset__submit">
+                        <input type="submit" class="submit--input-toenter" value="Entrar"">
+                        <input type=" button"" class="submit--input-register" value="Cadastrar"">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <section class=" slider">
+                        <div class="slider__slide">
+                            <img style="opacity: 1;" src="/img-illustration/First-img-slide.svg" alt="">
+                            <img src="/img-illustration/second-img-slide.svg" alt="">
+                            <img src="/img-illustration/third-img-slide.svg" alt="">
+                        </div>
+                        <div class="slide__bullets">
+                            <div class="slide__bullet-single slide__active-bullet"></div>
+                            <div class="slide__bullet-single "></div>
+                            <div class="slide__bullet-single"></div>
+                        </div>
+    </section>
+    </section>
+
+
+
+    <script src=" loginJS.js"></script>
+    <script src="/js/darkMode.js"></script>
+</body>
+
+</html>

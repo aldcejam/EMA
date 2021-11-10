@@ -1,0 +1,242 @@
+@import "/css/main.css";
+
+:root {
+  --carousel-color: rgba(117, 17, 121, 0.131);
+  --carousel-block-color: rgb(245, 245, 245);
+}
+
+.dark-mode:root {
+  --carousel-color: rgba(14, 4, 31, 0.652);
+  --carousel-block-color: rgb(14, 4, 38);
+}
+/* ===================================== Slide and Carousel ===================================== */
+/* ============== Slide and Carousel ============== */
+.slideCarousel::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.slideCarousel::-webkit-scrollbar-track {
+  background: rgb(212, 212, 212);
+}
+
+.slideCarousel::-webkit-scrollbar-thumb {
+  background-color: rgb(138, 138, 138);
+  border-radius: 220px;
+}
+
+/* ============== Layout ============== */
+.slideCarousel {
+  margin: 13vh auto;
+  width: 90vw;
+  max-width: 1325px;
+  height: 70vh;
+  transition: 0.4s;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* ==================================== Slide ==================================== */
+/* ============== Layout ============== */
+.slideCarousel__slide {
+  max-width: 1325px;
+  height: 56vh;
+  transition: 0.4s;
+  margin: 0;
+}
+
+.slide__container {
+  width: 80vw;
+  height: 100%;
+  max-height: 550px;
+  position: relative;
+  left: 5%;
+}
+
+.slide__container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+}
+
+/* ================ Bullets ================ */
+.slide__bullets {
+  width: 70px;
+  margin: 2% 50% 2%;
+}
+/* ============== Layout ============== */
+
+.bullets__bullet-single {
+  margin: 0 2px;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+}
+
+/* ============== Style ============== */
+.bullets__bullet-single {
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: black;
+}
+
+.bullets__active-bullet {
+  background-color: #fb0e9c;
+}
+
+/* ==================================== Carousel ==================================== */
+/* ============== Layout ============== */
+.slideCarousel__carousel {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carousel__container {
+  width: 100%;
+  padding: 2% 5%;
+  position: relative;
+}
+
+.container__block {
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  gap: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scroll-margin-left: .8rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 4%;
+}
+.container__block:target {
+  scroll-margin-left: .8em;
+}
+
+.container__block::-webkit-scrollbar {
+  display: none;
+}
+
+.block__item {
+  width: 30vw;
+  max-width: 260px;
+  text-align: center;
+}
+.item__img {
+  height: 25vh;
+  max-height: 180px;
+}
+
+.item__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.block__item p {
+  margin: 0 auto;
+  width: 28vw;
+  max-width: 270px;
+  overflow-x: hidden;
+
+}
+/* ==================== Icons navegation ==================== */
+.container__icons{
+  position: absolute;
+  display: flex;
+  width: 92%;
+  height: 0px;
+  top: 38%;
+  justify-content: space-between;
+}
+
+.icons__icon{
+  width: 50px;
+  height: 100%;
+  cursor: pointer;
+}
+.icon--left{
+  margin-left: calc(-2% + -4px);
+}
+
+/* ============== Style ============== */
+.slideCarousel__carousel {
+  background-color: var(--carousel-color);
+}
+
+.container__block {
+  background-color: var(--carousel-block-color);
+  border-radius: 40px;
+}
+
+/* ===== img ===== */
+.item__img {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.item__img img {
+  border-radius: 5px;
+}
+
+/* ===== Paragraph ===== */
+.block__item p {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.block__item:hover p {
+  color: blue;
+}
+
+/* ============================ Media Queries ============================ */
+
+@media (max-width: 840px) {
+  /* ====== slide ====== */
+  .slideCarousel__slide {
+    max-height: 40vh;
+  }
+  .bullets__bullet-single {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 660px) {
+  /* ====== slide ====== */
+  .slideCarousel__slide {
+    max-height: 35vh;
+  }
+  /* ====== carrousel ====== */
+  .item__img {
+    max-height: 100px;
+  }
+  .icons__icon{
+  width: 30px;
+}
+}
+
+@media (max-width: 570px) {
+  /* ====== slide ====== */
+  .slideCarousel__slide {
+    max-height: 33vh;
+  }
+}
+
+@media (max-width: 460px) {
+  /* ====== slide ====== */
+  .slideCarousel__slide {
+    max-height: 23vh;
+  }
+
+  /* ====== carrousel ====== */
+    .item__img {
+    max-height: 70px;
+  }
+}
+
+
